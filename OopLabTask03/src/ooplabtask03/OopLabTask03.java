@@ -79,6 +79,12 @@ class Customer {
         System.out.println("Order Placed");
     }
 
+    List<Order> orders = new ArrayList<>();
+
+    public List<Order> viewOrders() {
+        return orders;
+    }
+
 }
 
 class Inventory {
