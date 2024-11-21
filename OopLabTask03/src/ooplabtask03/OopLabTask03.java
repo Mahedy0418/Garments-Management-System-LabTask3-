@@ -16,4 +16,8 @@ class Garment {
     void updateStock(int quantity) {
         this.stockQuantity = quantity;
     }
+    double calculateDiscountPrice(double discountPercentage) {
+        double discount = price * (discountPercentage / 100);
+        return discount;
+    }
 }
