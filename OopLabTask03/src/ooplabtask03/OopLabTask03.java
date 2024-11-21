@@ -16,11 +16,13 @@ class Garment {
     void updateStock(int quantity) {
         this.stockQuantity = quantity;
     }
+
     double calculateDiscountPrice(double discountPercentage) {
         double discount = price * (discountPercentage / 100);
         return discount;
     }
 }
+
 class Fabric {
 
     public String id;
@@ -33,6 +35,7 @@ class Fabric {
         return newPrice;
     }
 }
+
 class Order {
 
     public String orderId;
@@ -63,6 +66,7 @@ class Order {
         }
     }
 }
+
 class Customer {
 
     public String customerId;
@@ -75,8 +79,8 @@ class Customer {
         System.out.println("Order Placed");
     }
 
-
 }
+
 class Inventory {
 
     List<Garment> garments;
@@ -91,9 +95,17 @@ class Inventory {
 
     Garment findGarment(String id) {
         for (Garment g : garments) {
-            if(g.id == id)
+            if (g.id == id) {
                 return g;
+            }
         }
         return null;
+    }
+}
+
+public class OopLabTask03 {
+
+    public static void main(String[] args) {
+
     }
 }
